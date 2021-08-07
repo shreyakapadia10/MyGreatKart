@@ -1,0 +1,74 @@
+/* -------------CSS FOR STARS STARTS------------------- */
+
+/* Hide Radio Buttons */
+.rate > input{
+    display: none;
+}
+
+.rate {
+    display: inline-block;
+    border: 0;
+}
+
+.rate > label{
+    float: right;
+}
+
+/* Showing stars */
+.rate > label::before{
+    content: "\f005";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.3rem 0.2rem;
+    cursor: pointer;
+}
+
+/* Half stars */
+
+.rate .half::before{
+    content: "\f089";
+    position: absolute;
+    padding-right: 0;
+}
+
+/* Click and hover */
+input:checked ~ label, label:hover ~ label{
+    color: #ffb503;
+}
+
+/* Hover Highlight */
+input:checked + label:hover, input:checked ~ label:hover, input:checked ~ label:hover ~ label, label:hover ~ input:checked ~ label{
+    color: #cc9000;
+}
+
+.review-stars{
+    color: #ffb503;
+}
+
+.review-stars > span{
+    color: #000000;
+}
+/* -------------CSS FOR STARS ENDS------------------- */
+
+/* -------------CSS FOR THUMBNAILS STARTS------------------- */
+ul.thumbnail{
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+
+ul.thumbnail li{
+    list-style: none;
+    margin: 10px;
+}
+
+ul.thumbnail li img{
+    height: 80px;
+    width: 80px;
+    margin: 2px;
+    border: 1px solid grey;
+}
+
+/* -------------CSS FOR THUMBNAILS ENDS------------------- */

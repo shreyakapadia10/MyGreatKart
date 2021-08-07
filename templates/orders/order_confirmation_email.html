@@ -1,0 +1,9 @@
+{% autoescape off %}
+
+Hi {{ user.first_name }} {{ user.last_name }},
+
+We've successfully received your order.
+You can track your order with your Order ID.
+Order ID: {{order_number}}
+
+{% endautoescape %}
